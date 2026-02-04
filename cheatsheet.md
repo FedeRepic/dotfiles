@@ -1,6 +1,92 @@
 # ⌨️  Cheatsheet - Neovim & Tmux
 
-## Neovim (Leader = Space)
+## Neovim Básico (para principiantes)
+
+### Modos
+| Key | Modo | Descripción |
+|-----|------|-------------|
+| `Esc` | Normal | Modo por defecto, para comandos |
+| `i` | Insert | Insertar texto ANTES del cursor |
+| `a` | Insert | Insertar texto DESPUÉS del cursor |
+| `I` | Insert | Insertar al INICIO de línea |
+| `A` | Insert | Insertar al FINAL de línea |
+| `o` | Insert | Nueva línea ABAJO |
+| `O` | Insert | Nueva línea ARRIBA |
+| `v` | Visual | Seleccionar texto |
+| `V` | Visual Line | Seleccionar líneas completas |
+| `Ctrl+v` | Visual Block | Seleccionar bloque/columna |
+
+### Movimiento básico
+| Key | Acción |
+|-----|--------|
+| `h` | ← Izquierda |
+| `j` | ↓ Abajo |
+| `k` | ↑ Arriba |
+| `l` | → Derecha |
+| `w` | Siguiente palabra |
+| `b` | Palabra anterior |
+| `e` | Final de palabra |
+| `0` | Inicio de línea |
+| `$` | Final de línea |
+| `gg` | Ir al inicio del archivo |
+| `G` | Ir al final del archivo |
+| `{` | Párrafo anterior |
+| `}` | Párrafo siguiente |
+| `Ctrl+u` | Subir media página |
+| `Ctrl+d` | Bajar media página |
+| `%` | Ir al paréntesis/bracket opuesto |
+
+### Edición básica
+| Key | Acción |
+|-----|--------|
+| `x` | Borrar carácter bajo cursor |
+| `dd` | Borrar línea completa |
+| `dw` | Borrar palabra |
+| `d$` o `D` | Borrar hasta final de línea |
+| `cc` | Cambiar línea completa |
+| `cw` | Cambiar palabra |
+| `yy` | Copiar (yank) línea |
+| `yw` | Copiar palabra |
+| `p` | Pegar DESPUÉS del cursor |
+| `P` | Pegar ANTES del cursor |
+| `u` | Deshacer (undo) |
+| `Ctrl+r` | Rehacer (redo) |
+| `.` | Repetir última acción |
+
+### Buscar y reemplazar
+| Key | Acción |
+|-----|--------|
+| `/texto` | Buscar "texto" hacia adelante |
+| `?texto` | Buscar hacia atrás |
+| `n` | Siguiente resultado |
+| `N` | Resultado anterior |
+| `*` | Buscar palabra bajo cursor |
+| `:%s/viejo/nuevo/g` | Reemplazar todo en archivo |
+| `:s/viejo/nuevo/g` | Reemplazar en línea actual |
+
+### Archivos y buffers
+| Key | Acción |
+|-----|--------|
+| `:w` | Guardar |
+| `:q` | Salir |
+| `:wq` o `:x` | Guardar y salir |
+| `:q!` | Salir sin guardar |
+| `:e archivo` | Abrir archivo |
+| `:bn` | Buffer siguiente |
+| `:bp` | Buffer anterior |
+
+### Números + comandos (muy útil!)
+| Ejemplo | Acción |
+|---------|--------|
+| `5j` | Bajar 5 líneas |
+| `3dd` | Borrar 3 líneas |
+| `10w` | Avanzar 10 palabras |
+| `2yy` | Copiar 2 líneas |
+| `4x` | Borrar 4 caracteres |
+
+---
+
+## Neovim Avanzado (Leader = Space)
 
 ### Navigation
 | Key | Action |
