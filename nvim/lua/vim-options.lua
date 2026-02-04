@@ -70,3 +70,11 @@ end, { desc = "Smart Esc: close float/qf or clear hlsearch", silent = true })
 
 -- Cheatsheet
 vim.keymap.set("n", "<leader>?", ":e ~/dotfiles/cheatsheet.md<CR>", { desc = "Open Cheatsheet" })
+
+-- Close cheatsheet with q
+vim.api.nvim_create_autocmd("BufEnter", {
+	pattern = "*/cheatsheet.md",
+	callback = function()
+		vim.keymap.set("n", "q", ":bd<CR>", { buffer = true, silent = true, desc = "Close cheatsheet" })
+	end,
+})

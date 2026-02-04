@@ -196,4 +196,4 @@ v, vim → nvim
 ta, tn, tl, tk → tmux commands
 ```
 
-> Press `q` to close this cheatsheet
+> Para cerrar: `:bd` (cerrar buffer) o `Space bd` o `:q` (salir)
