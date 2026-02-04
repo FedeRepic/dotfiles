@@ -62,8 +62,11 @@ vim.keymap.set("n", "<Esc>", function()
 		return
 	end
 
-	-- Clear search highlights
+-- Clear search highlights
 	if vim.v.hlsearch == 1 then
 		vim.cmd("nohlsearch")
 	end
 end, { desc = "Smart Esc: close float/qf or clear hlsearch", silent = true })
+
+-- Cheatsheet
+vim.keymap.set("n", "<leader>?", ":e ~/dotfiles/cheatsheet.md<CR>", { desc = "Open Cheatsheet" })

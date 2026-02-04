@@ -61,7 +61,8 @@ return {
 						action = ": Lazy",
 						enabled = package.loaded.lazy ~= nil,
 					},
-					{ icon = " ", key = "q", desc = "Quit", action = ": qa" },
+{ icon = " ", key = "h", desc = "Help/Cheatsheet", action = ":e ~/dotfiles/cheatsheet.md" },
+					{ icon = " ", key = "q", desc = "Quit", action = ": qa" },
 				},
 
 				-- NEOVIM header

@@ -64,10 +64,31 @@ dotfiles/
 │       ├── vim-options.lua
 │       └── plugins/    # Plugin configs
 ├── starship.toml       # Prompt configuration
-└── tmux/
-    ├── tmux.conf       # Main config
-    └── plugins/        # TPM + plugins
+├── tmux/
+│   ├── tmux.conf       # Main config
+│   └── plugins/        # TPM + plugins
+├── zsh/
+│   └── aliases.zsh     # Shell aliases
+└── cheatsheet.md       # Keybinds reference
 ```
+
+## Cheatsheet
+
+Quick reference for all keybindings:
+
+- **In Neovim**: Press `Space ?` or `h` on dashboard
+- **In Tmux**: Press `Ctrl+a ?`
+- **View file**: `~/dotfiles/cheatsheet.md`
+
+## Shell Aliases
+
+Add to your `~/.zshrc`:
+
+```bash
+source ~/dotfiles/zsh/aliases.zsh
+```
+
+Includes shortcuts for: git, eza (ls), nvim, tmux
 
 ## Credits
 
