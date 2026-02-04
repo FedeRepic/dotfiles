@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Neovim
+nvim/lazy-lock.json
+nvim/last_theme.txt
+nvim/plugin/
+
+# Tmux
+tmux/plugins/*/
+
+# Keep TPM
+!tmux/plugins/tpm/

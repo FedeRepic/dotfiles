@@ -1,0 +1,102 @@
+# {ghostty +list-themes}
+theme = transparent.conf
+
+# Cursor
+cursor-style = bar
+cursor-style-blink = false
+adjust-cursor-thickness = 2
+shell-integration-features = cursor,sudo
+adjust-cell-height = 20%
+
+# MacOS
+# 'official', blueprint`, `chalkboard`, `microchip`, `glass`, `holographic`,`paper`, `retro`, `xray`
+macos-icon = holographic 
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
+macos-icon-frame = plastic
+macos-window-shadow = false
+macos-option-as-alt = right
+macos-window-shadow = false
+macos-option-as-alt = true
+mouse-hide-while-typing = true 
+
+# Application
+quit-after-last-window-closed = true
+confirm-close-surface = false
+quick-terminal-animation-duration = 0.08
+
+# Window splits - visual indicator for active pane
+window-padding-x = 4
+window-padding-y = 4
+window-decoration = true
+unfocused-split-opacity = 0.7
+unfocused-split-fill = #1a1b26
+
+# Fonts
+# font-family = "JetBrainsMono Nerd Font"
+font-family = "CaskaydiaCove Nerd Font Mono"
+font-thicken = false
+font-size = 16
+
+# Keybinds
+# keybind = cmd+s=toggle_quick_terminal
+
+# PANE SPLITTING
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+shift+w=close_surface
+
+# Navigate between panes
+keybind = alt+left=goto_split:previous
+keybind = alt+right=goto_split:next
+keybind = alt+up=goto_split:previous
+keybind = alt+down=goto_split:next
+
+# Resize panes
+keybind = cmd+ctrl+left=resize_split:left,10
+keybind = cmd+ctrl+right=resize_split:right,10
+keybind = cmd+ctrl+up=resize_split:up,10
+keybind = cmd+ctrl+down=resize_split:down,10
+
+# Shaders
+# custom-shader-animation = true
+# https://github.com/hackrmomo/ghostty-shaders
+# custom-shader = shaders/animated-gradient-shader.glsl
+# custom-shader = shaders/bettercrt.glsl
+# custom-shader = shaders/bloom.glsl
+# custom-shader = shaders/bloom1.glsl
+# custom-shader = shaders/bloom075.glsl
+# custom-shader = shaders/bloom060.glsl
+ custom-shader = shaders/bloom050.glsl
+# custom-shader = shaders/bloom025.glsl
+# custom-shader = shaders/bloom050.glsl
+# custom-shader = shaders/bloom060.glsl
+# custom-shader = shaders/bloom075.glsl
+# custom-shader = shaders/bloom1.glsl
+# custom-shader = shaders/crt.glsl
+# custom-shader = shaders/cubes.glsl
+# custom-shader = shaders/dither.glsl
+# custom-shader = shaders/drunkard.glsl
+# custom-shader = shaders/fireworks-rockets.glsl
+# custom-shader = shaders/fireworks.glsl
+# custom-shader = shaders/gears-and-belts.glsl
+# custom-shader = shaders/glitchy.glsl
+# custom-shader = shaders/glow-rgbsplit-twitchy.glsl
+#  custom-shader = shaders/gradient-background.glsl
+# custom-shader = shaders/inside-the-matrix.glsl
+# custom-shader = shaders/just-snow.glsl
+# custom-shader = shaders/matrix-hallway.glsl
+# custom-shader = shaders/negative.glsl
+# custom-shader = shaders/retro-terminal.glsl
+# custom-shader = shaders/smoke-and-ghost.glsl
+# custom-shader = shaders/sparks-from-fire.glsl
+# custom-shader = shaders/spotlight.glsl
+# custom-shader = shaders/starfield-colors.glsl
+# custom-shader = shaders/starfield.glsl
+# custom-shader = shaders/tft.glsl
+# custom-shader = shaders/underwater.glsl
+# custom-shader = shaders/water.glsl
+# custom-shader = shaders/cursor_blaze.glsl
+  custom-shader = shaders/cursor_blaze_no_trail.glsl
+  custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/cursor_smear_fade.glsl
